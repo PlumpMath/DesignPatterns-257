@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DesignPatterns.Tests;
 
 namespace DesignPatterns.Classes
 {
@@ -14,6 +15,8 @@ namespace DesignPatterns.Classes
         {
             get { return _instance; }
         }
+
+        internal ConnectionData ConnectionData { get; set; } // Singleton can have it's internal state
 
         private  Singleton() {}
 
