@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using DesignPatterns.Classes;
+using NUnit.Framework;
 
 namespace DesignPatterns.Tests
 {
@@ -8,7 +9,10 @@ namespace DesignPatterns.Tests
         [Test]
         public void Test_OnlyOneObjectReference_Exists()
         {
-            Assert.Inconclusive(); 
+            var first = Singleton.Instance;
+            var second = Singleton.Instance;
+
+            Assert.AreSame(first, second);
         }
     }
 }
