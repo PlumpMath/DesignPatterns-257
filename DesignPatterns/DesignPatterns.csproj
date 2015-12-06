@@ -44,9 +44,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdapterPattern\DataRenderer.cs" />
+    <Compile Include="AdapterPattern\DataRendererAdapter.cs" />
+    <Compile Include="AdapterPattern\IDataRenderer.cs" />
+    <Compile Include="AdapterPattern\Pattern.cs" />
+    <Compile Include="AdapterPattern\PatternRendererClient.cs" />
     <Compile Include="Classes\Singleton.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Classes\ConnectionData.cs" />
+    <Compile Include="Tests\AdapterTests.cs" />
     <Compile Include="Tests\SingletonTests.cs" />
   </ItemGroup>
   <ItemGroup />
