@@ -5,20 +5,15 @@ namespace DesignPatterns.BuilderPattern
 {
     public class Sandwich
     {
-        private CheeseType _cheeseType;
-        private bool _hasKetchup;
-        private bool _hasMustard;
-        private MeatType _meatType;
-        private List<string> _vegatables;
+        public CheeseType CheeseType {get; set;}
+        public bool HasKetchup { get; set; }
+        public bool HasMustard { get; set; }
+        public MeatType MeatType { get; set; }
+        public List<string> Vegatables { get; set; }
 
-        // This constructor has a problem - too many parameters
-        public Sandwich(CheeseType cheeseType, MeatType meatType, bool hasKetchup, bool hasMustard, IEnumerable<string> vegetables)
+        public void Display()
         {
-            _cheeseType = cheeseType;
-            _meatType = meatType;
-            _hasKetchup = hasKetchup;
-            _hasMustard = hasMustard;
-            _vegatables = vegetables.ToList(); 
+            System.Console.WriteLine("This is sample sandwich"); //only partial implementation for test purposes
         }
     }
 
