@@ -49,6 +49,7 @@
     <Compile Include="AdapterPattern\IDataRenderer.cs" />
     <Compile Include="AdapterPattern\Pattern.cs" />
     <Compile Include="AdapterPattern\PatternRendererClient.cs" />
+    <Compile Include="BuilderPattern\Sandwich.cs" />
     <Compile Include="Classes\Singleton.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Classes\ConnectionData.cs" />
