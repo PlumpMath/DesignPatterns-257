@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace DesignPatterns.BuilderPattern
 {
@@ -19,11 +15,28 @@ namespace DesignPatterns.BuilderPattern
         public void CreateSandwich()
         {
             _sandwich = new Sandwich();
+
+            // Property initialization is refactored to use methods 
+            ApplyCheeseAndMeat();
+            ApplyVegatables(); 
+            ApplyCondiments(); 
+        }
+
+        private void ApplyCheeseAndMeat()
+        {
             _sandwich.CheeseType = CheeseType.Cheddar;
+            _sandwich.MeatType = MeatType.Chicken;
+        }
+
+        private void ApplyVegatables()
+        {
+            _sandwich.Vegatables = new List<string> { "tomato", "onion" };
+        }
+
+        private void ApplyCondiments()
+        {
             _sandwich.HasKetchup = true;
             _sandwich.HasMustard = true;
-            _sandwich.MeatType = MeatType.Chicken;
-            _sandwich.Vegatables = new List<string> { "tomato", "onion" };
         }
     }
 }
