@@ -3,7 +3,7 @@
 namespace DesignPatterns.BuilderPattern
 {
     // Ensures that all properties are initialized
-    public class SandwichBuilder
+    public class MyFavoriteSandwichBuilder
     {
         private Sandwich _sandwich;
 
