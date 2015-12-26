@@ -55,8 +55,10 @@
     <Compile Include="BuilderPattern\SandwichMaker.cs" />
     <Compile Include="Classes\Singleton.cs" />
     <Compile Include="FactoryPattern\AudiCar.cs" />
+    <Compile Include="FactoryPattern\AudiFactory.cs" />
     <Compile Include="FactoryPattern\CarFactory.cs" />
     <Compile Include="FactoryPattern\IAuto.cs" />
+    <Compile Include="FactoryPattern\IAutoFactory.cs" />
     <Compile Include="FactoryPattern\ToyotaCar.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Classes\ConnectionData.cs" />

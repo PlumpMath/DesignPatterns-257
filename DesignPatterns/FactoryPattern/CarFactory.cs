@@ -4,6 +4,9 @@ using System.Linq;
 
 namespace DesignPatterns.FactoryPattern
 {
+    /// <summary>
+    /// Simple factory approach. Factory produces different auto types. 
+    /// </summary>
     public class CarFactory
     {
         private Dictionary<string, Type> autos; 

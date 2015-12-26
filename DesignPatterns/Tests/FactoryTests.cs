@@ -14,11 +14,22 @@ namespace DesignPatterns.Tests
         [Test]
         public void Test_CreateCar()
         {
-            CarFactory manager = new CarFactory(); //NOTE: factory type has to be known by the caller in simple factory approach
-            IAuto auto = manager.CreateInstance("audi");
+            // Factory method pattern 
+            IAutoFactory factory = CreateFactory();
+            IAuto auto = factory.CreateAuto(); 
+            
+            // Simple factory approach 
+            //CarFactory manager = new CarFactory(); //NOTE: factory type has to be known by the caller in simple factory approach
+            //IAuto auto = manager.CreateInstance("audi");
 
             auto.TurnOn();
             auto.TurnOff(); 
+        }
+
+        // Returns concrete factory - it can be placed in some kind of configuration file
+        private IAutoFactory CreateFactory()
+        {
+            return new AudiFactory(); 
         }
     }
 }
