@@ -14,8 +14,8 @@ namespace DesignPatterns.Tests
         [Test]
         public void Test_CreateCar()
         {
-            CarManager manager = new CarManager();
-            IAuto auto = manager.GetCar("audi");
+            CarFactory manager = new CarFactory(); //NOTE: factory type has to be known by the caller in simple factory approach
+            IAuto auto = manager.CreateInstance("audi");
 
             auto.TurnOn();
             auto.TurnOff(); 
