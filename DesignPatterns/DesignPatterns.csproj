@@ -54,10 +54,15 @@
     <Compile Include="BuilderPattern\SandwichBuilder.cs" />
     <Compile Include="BuilderPattern\SandwichMaker.cs" />
     <Compile Include="Classes\Singleton.cs" />
+    <Compile Include="FactoryPattern\AudiCar.cs" />
+    <Compile Include="FactoryPattern\CarManager.cs" />
+    <Compile Include="FactoryPattern\IAuto.cs" />
+    <Compile Include="FactoryPattern\ToyotaCar.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Classes\ConnectionData.cs" />
     <Compile Include="Tests\AdapterTests.cs" />
     <Compile Include="Tests\BuilderTests.cs" />
+    <Compile Include="Tests\FactoryTests.cs" />
     <Compile Include="Tests\SingletonTests.cs" />
   </ItemGroup>
   <ItemGroup />
