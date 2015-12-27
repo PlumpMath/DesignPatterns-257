@@ -51,7 +51,9 @@
     <Compile Include="AdapterPattern\PatternRendererClient.cs" />
     <Compile Include="BridgePattern\Book.cs" />
     <Compile Include="BridgePattern\Faq.cs" />
+    <Compile Include="BridgePattern\ICustomFormatter.cs" />
     <Compile Include="BridgePattern\Manuscript.cs" />
+    <Compile Include="BridgePattern\StandardFormatter.cs" />
     <Compile Include="BuilderPattern\Sandwich.cs" />
     <Compile Include="BuilderPattern\MyFavoriteSandwichBuilder.cs" />
     <Compile Include="BuilderPattern\SandwichBuilder.cs" />
