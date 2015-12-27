@@ -14,7 +14,7 @@ namespace DesignPatterns.Tests
         [Test]
         public void Test_PrintAllManuscripts()
         {
-            List<IManuscript> manuscripts = new List<IManuscript>(); 
+            List<Manuscript> manuscripts = new List<Manuscript>(); 
 
             Book book = new Book();
             book.Title = "Book title";

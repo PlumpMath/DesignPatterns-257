@@ -2,12 +2,12 @@
 
 namespace DesignPatterns.BridgePattern
 {
-    class Book : IManuscript
+    class Book : Manuscript
     {
         public string Title { get; set; }
         public string Author { get; set; }
 
-        public void Print()
+        public override void Print()
         {
             Console.WriteLine($"{Title} and {Author}");
         }
